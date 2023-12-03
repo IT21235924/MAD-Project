@@ -24,7 +24,7 @@ class deleteAccount : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-        userId = firebaseAuth.currentUser?.uid ?: ""
+        this.userId = firebaseAuth.currentUser?.uid ?: ""
 
         // Delete the user's document from Firestore
 

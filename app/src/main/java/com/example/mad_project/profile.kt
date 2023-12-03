@@ -45,7 +45,7 @@ class profile : AppCompatActivity() {
         }
 
         binding.LogOutButton.setOnClickListener {
-            firebaseAuth.signOut()
+                firebaseAuth.signOut()
             startActivity(
                 Intent(this, Login::class.java)
             )

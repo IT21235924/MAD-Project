@@ -3,8 +3,6 @@ package com.example.mad_project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import com.example.mad_project.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -13,6 +11,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class SignUp : AppCompatActivity() {
+
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private val db = Firebase.firestore
